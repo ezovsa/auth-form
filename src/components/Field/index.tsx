@@ -1,4 +1,4 @@
-import React, {ChangeEvent,FocusEvent, InputHTMLAttributes, useState} from 'react'
+import React, {ChangeEvent, FocusEvent, InputHTMLAttributes, ReactNode, useState} from 'react'
 import cx from "classnames";
 import { Icon } from "components";
 
@@ -10,6 +10,7 @@ interface FieldProps extends InputHTMLAttributes<HTMLInputElement>{
     placeholder?: string;
     label?: string;
     error?: string;
+    icon?: ReactNode;
 }
 
 export type Ref = HTMLInputElement;
@@ -27,6 +28,7 @@ export const Field = React.forwardRef<Ref, FieldProps>(({
     error,
     name,
     inputMode,
+    icon,
     ...rest
 }, ref) => {
     const [isFocused, setIsFocused] = useState(false)
@@ -68,7 +70,7 @@ export const Field = React.forwardRef<Ref, FieldProps>(({
                 placeholder={placeholder}
                 {...rest}
             />
-            {/*{icon && <Icon className={styles.icon} name={icon} />}*/}
+            {icon && <div className={styles.icon}>{icon}</div>}
             {label && <label className={cx(styles.label, { [styles.focused]: isFocused || !!value },            { [styles.labelError]: error },)}>{label}</label>}
             {error && (
               <div className={styles.error}>

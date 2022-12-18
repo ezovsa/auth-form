@@ -60,6 +60,7 @@ const Login = () => {
                 label='E-mail'
                 inputMode='email'
                 error={errors.email?.message}
+                icon={<Icon.Email />}
               />
             )}
           />

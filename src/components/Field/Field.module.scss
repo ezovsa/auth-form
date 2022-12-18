@@ -45,11 +45,18 @@
 
 .icon {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+    z-index: 2;
     pointer-events: none;
-    fill: $n5 ;
+    padding: rem(8);
+    right: rem(12);
+    top: rem(34);
+    width: rem(40);
+    height: rem(40);
+
+    svg path {
+        transition: all .2s;
+        fill: $n4;
+    }
 }
 
 .label {

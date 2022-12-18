@@ -1,8 +1,8 @@
-import React, {ChangeEvent,FocusEvent, InputHTMLAttributes, useState} from 'react'
+import React, { ChangeEvent, FocusEvent, MouseEvent, InputHTMLAttributes, useState } from 'react'
 import cx from "classnames";
 import { Icon } from "components";
 
-import styles from "./Field.module.scss";
+import styles from "./FieldPassword.module.scss";
 
 interface FieldProps extends InputHTMLAttributes<HTMLInputElement>{
     className?: string;
@@ -46,7 +46,7 @@ export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
         onFocus && onFocus(e)
     }
 
-    const handleChangeVisible = (e: ) => {
+    const handleChangeVisible = (e: MouseEvent<HTMLElement>) => {
         e.preventDefault()
         setIsShow(prev => !prev)
     }
