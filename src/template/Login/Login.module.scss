@@ -1,0 +1,111 @@
+@import "../../styles/helpers";
+
+.wrapper {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  min-height: 100vh;
+  background: $n8;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  width: 50%;
+  padding: rem(80);
+
+  @include xlg {
+    padding: rem(64);
+  }
+
+  @include lg {
+    padding: rem(40);
+  }
+
+  @include md {
+    width: 100%;
+    padding: rem(40) rem(24);
+  }
+}
+
+.banner {
+  background-color: $lightBlue;
+  justify-content: space-between;
+}
+
+.info {
+  font-size: rem(48);
+  line-height: rem(54);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  svg path {
+    fill: $n7;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $n7;
+    margin-left: rem(12);
+  }
+}
+
+.title {
+  font-size: rem(64);
+  color: $n0;
+  margin-bottom: rem(48);
+}
+
+.loginField {
+  margin-bottom: rem(24);
+
+  &:last-of-type {
+    margin-bottom: rem(32);
+  }
+}
+
+.button {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: rem(2) solid $n0;
+  border-radius: rem(4);
+  text-align: center;
+  height: rem(60);
+  padding: 0 rem(30);
+  background: transparent;
+  transition: all .2s;
+
+  color: $n0;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+
+  & svg {
+    fill: $n0;
+    margin-left: rem(8);
+  }
+
+  &:hover {
+    background: $n0;
+    color: $n8;
+
+    & svg {
+      fill: $n8;
+    }
+  }
+}

@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea1ef38-7782-4cc4-82be-9a3d0c46e891" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FieldPassword/FieldPassword.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/IconEmail/IconEmail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/IconEyeClose/IconEyeClose.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/IconEyeOpen/IconEyeOpen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/IconLogo/IconLogo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Icon/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FieldPassword/FieldPassword.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +38,7 @@
     "node.js.selected.package.eslint": "",
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Users/sergey/Desktop/auth-form/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -68,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671227911808</updated>
       <workItem from="1671227913259" duration="4338000" />
-      <workItem from="1671311929849" duration="14256000" />
+      <workItem from="1671311929849" duration="15352000" />
     </task>
     <servers />
   </component>

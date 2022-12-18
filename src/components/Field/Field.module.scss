@@ -5,9 +5,8 @@
 }
 
 .input {
-    position: relative;
     height: rem(96);
-    padding: rem(16) rem(54) 0 0;
+    padding: rem(16) 0 0;
     width: 100%;
     border-width: 0 0 rem(1);
     border-style: solid;
@@ -44,6 +43,15 @@
     }
 }
 
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: $n5 ;
+}
+
 .label {
     position: absolute;
     transform: translateY(rem(38));
@@ -69,30 +77,5 @@
     margin-top: rem(8);
     color: $red;
     font-size: rem(16);
-}
-
-.icon {
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    right: rem(12);
-    top: rem(34);
-    width: rem(40);
-    height: rem(40);
-
-    button {
-        padding: rem(8);
-    }
-
-    svg path {
-        transition: all .2s;
-        fill: $n4;
-    }
-
-    &:hover {
-        svg path {
-            fill: $n1;
-        }
-    }
 }
 

@@ -14,7 +14,7 @@ interface FieldProps extends InputHTMLAttributes<HTMLInputElement>{
 
 export type Ref = HTMLInputElement;
 
-export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
+export const Field = React.forwardRef<Ref, FieldProps>(({
     className,
     inputClassName,
     type,
@@ -30,7 +30,6 @@ export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
     ...rest
 }, ref) => {
     const [isFocused, setIsFocused] = useState(false)
-    const [isShow, setIsShow] = useState(false)
 
     const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         onChange && onChange(e)
@@ -46,11 +45,6 @@ export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
         onFocus && onFocus(e)
     }
 
-    const handleChangeVisible = (e: ) => {
-        e.preventDefault()
-        setIsShow(prev => !prev)
-    }
-
     return (
     <div
         className={cx(
@@ -59,13 +53,11 @@ export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
         )}
     >
         <div className={styles.wrap}>
-            {label && <label className={cx(styles.label, { [styles.focused]: isFocused || !!value },            { [styles.labelError]: error },)}>{label}</label>}
-            <div className={styles.icon}><button onClick={handleChangeVisible}>{isShow ? <Icon.EyeOpen /> : <Icon.EyeClose />}</button></div>
             <input
                 ref={ref}
                 name={name}
                 className={cx(styles.input, inputClassName, { [styles.showPlaceholder]: !value }, { [styles.inputError]: error })}
-                type={isShow ? 'text' : 'password'}
+                type={type || "text"}
                 inputMode={inputMode}
                 tabIndex={1}
                 autoComplete='off'
@@ -76,6 +68,8 @@ export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
                 placeholder={placeholder}
                 {...rest}
             />
+            {/*{icon && <Icon className={styles.icon} name={icon} />}*/}
+            {label && <label className={cx(styles.label, { [styles.focused]: isFocused || !!value },            { [styles.labelError]: error },)}>{label}</label>}
             {error && (
               <div className={styles.error}>
                   {error}

@@ -45,22 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,js,tsx,json,css,html,json}": [
-      "yarn prettier --write .",
-      "git add ."
-    ],
-    "*.{js,css,md}": "prettier --write"
-  },
-  "devDependencies": {
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
-    "prettier": "2.8.1"
   }
 }

@@ -1,0 +1,59 @@
+@mixin xlg {
+    @media only screen and (max-width: 1440px) {
+        @content
+    }
+}
+@mixin lg {
+    @media only screen and (max-width: 1280px) {
+        @content
+    }
+}
+@mixin md {
+    @media only screen and (max-width: 1024px) {
+        @content
+    }
+}
+@mixin sm {
+    @media only screen and (max-width: 768px) {
+        @content
+    }
+}
+@mixin xs {
+    @media only screen and (max-width: 575px) {
+        @content
+    }
+}
+
+// to rem
+@function rem($value) {
+    @return calc($value / 16) + rem
+}
+
+@mixin title {
+    font-size: rem(18);
+    line-height: rem(36);
+    letter-spacing: -0.01em;
+    font-weight: 700;
+}
+
+@mixin body {
+    font-size: rem(24);
+    line-height: rem(32);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+@mixin base {
+    font-size: rem(16);
+    line-height: rem(24);
+    letter-spacing: -0.01em;
+    font-weight: 700;
+}
+
+@mixin button {
+    font-size: rem(12);
+    line-height: rem(24);
+    font-weight: 800;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
