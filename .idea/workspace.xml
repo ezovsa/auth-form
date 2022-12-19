@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea1ef38-7782-4cc4-82be-9a3d0c46e891" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Modal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Success/Success.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Success/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Field/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Field/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/Login/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/sergey/Desktop/auth-form/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sergey/Desktop/auth-form/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/sergey/Desktop/auth-form/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
@@ -54,7 +61,9 @@
       <updated>1671227911808</updated>
       <workItem from="1671227913259" duration="4338000" />
       <workItem from="1671311929849" duration="15579000" />
-      <workItem from="1671369351704" duration="355000" />
+      <workItem from="1671369351704" duration="6068000" />
+      <workItem from="1671481115793" duration="1634000" />
+      <workItem from="1671483956953" duration="1410000" />
     </task>
     <servers />
   </component>

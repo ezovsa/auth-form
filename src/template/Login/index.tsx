@@ -1,9 +1,9 @@
-import React  from 'react'
+import React, {useState} from 'react'
 import cx from 'classnames'
 import * as yup from 'yup'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller, useForm } from "react-hook-form";
-import {Field, FieldPassword, Icon} from "components";
+import {Field, FieldPassword, Icon, Modal} from "components";
 
 import styles from './Login.module.scss'
 
@@ -13,7 +13,7 @@ type FormValues = {
 }
 
 const Login = () => {
-
+  const [isOpenModal, setIsOpenModal] = useState<boolean>(false)
   const LoginSchema = yup.object().shape({
     email: yup.string().email('Email is not correct').required('Email is required'),
     password: yup.string()
@@ -37,14 +37,29 @@ const Login = () => {
 
   const onSubmit = (values: FormValues) => {
     console.log(values)
+    setIsOpenModal(true)
     reset()
   }
 
+  const handleCloseModal = () => {
+    setIsOpenModal(false)
+  }
+
   return (
+    <>
+      <Modal
+        className={styles.modal}
+        closeClassName={styles.close}
+        visible={isOpenModal}
+        onClose={handleCloseModal}
+      >
+
+      </Modal>
+
     <div className={styles.wrapper}>
       <div className={cx(styles.col, styles.banner)}>
         <div className={styles.logo}><Icon.Logo /><span>Auth form</span></div>
-        <div className={styles.info}>Sign in to continue or create account</div>
+        <p className={styles.info}>Sign in to continue or create account</p>
       </div>
       <div className={styles.col}>
         <h3 className={styles.title}>Sign in</h3>
@@ -86,6 +101,7 @@ const Login = () => {
         </form>
       </div>
     </div>
+        </>
   )
 }
 

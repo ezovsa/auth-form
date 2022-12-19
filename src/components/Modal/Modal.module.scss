@@ -1,0 +1,29 @@
+@import '../../styles/helpers';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 990;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  &:before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background: rgba(#202020, .90);
+    backdrop-filter: blur(rem(4));
+  }
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background: $n8;
+  opacity: .25;
+}
+

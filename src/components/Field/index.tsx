@@ -55,6 +55,8 @@ export const Field = React.forwardRef<Ref, FieldProps>(({
         )}
     >
         <div className={styles.wrap}>
+            {icon && <div className={styles.icon}>{icon}</div>}
+            {label && <label className={cx(styles.label, { [styles.focused]: isFocused || !!value },            { [styles.labelError]: error },)}>{label}</label>}
             <input
                 ref={ref}
                 name={name}
@@ -70,9 +72,7 @@ export const Field = React.forwardRef<Ref, FieldProps>(({
                 placeholder={placeholder}
                 {...rest}
             />
-            {icon && <div className={styles.icon}>{icon}</div>}
-            {label && <label className={cx(styles.label, { [styles.focused]: isFocused || !!value },            { [styles.labelError]: error },)}>{label}</label>}
-            {error && (
+           {error && (
               <div className={styles.error}>
                   {error}
               </div>
