@@ -76,24 +76,9 @@
 }
 
 .button {
-  display: inline-flex;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   border: rem(2) solid $n0;
-  border-radius: rem(4);
-  text-align: center;
-  height: rem(60);
-  padding: 0 rem(30);
   background: transparent;
-  transition: all .2s;
-
-  color: $n0;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 0.17em;
-  text-transform: uppercase;
 
   & svg {
     fill: $n0;

@@ -60,7 +60,7 @@ export const FieldPassword = React.forwardRef<Ref, FieldProps>(({
     >
         <div className={styles.wrap}>
             {label && <label className={cx(styles.label, { [styles.focused]: isFocused || !!value },            { [styles.labelError]: error },)}>{label}</label>}
-            <div className={styles.icon}><button onClick={handleChangeVisible}>{isShow ? <Icon.EyeOpen /> : <Icon.EyeClose />}</button></div>
+            <div className={styles.icon}><button type='button' onClick={handleChangeVisible}>{isShow ? <Icon.EyeOpen /> : <Icon.EyeClose />}</button></div>
             <input
                 ref={ref}
                 name={name}

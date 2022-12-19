@@ -1,6 +1,5 @@
 import React, {ChangeEvent, FocusEvent, InputHTMLAttributes, ReactNode, useState} from 'react'
 import cx from "classnames";
-import { Icon } from "components";
 
 import styles from "./Field.module.scss";
 

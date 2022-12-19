@@ -3,7 +3,7 @@ import cx from 'classnames'
 import * as yup from 'yup'
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller, useForm } from "react-hook-form";
-import {Field, FieldPassword, Icon, Modal} from "components";
+import { Field, FieldPassword, Icon, Modal, Success } from "components";
 
 import styles from './Login.module.scss'
 
@@ -13,7 +13,7 @@ type FormValues = {
 }
 
 const Login = () => {
-  const [isOpenModal, setIsOpenModal] = useState<boolean>(false)
+  const [isOpenModal, setIsOpenModal] = useState<boolean>(true)
   const LoginSchema = yup.object().shape({
     email: yup.string().email('Email is not correct').required('Email is required'),
     password: yup.string()
@@ -53,7 +53,7 @@ const Login = () => {
         visible={isOpenModal}
         onClose={handleCloseModal}
       >
-
+      <Success onClose={handleCloseModal} />
       </Modal>
 
     <div className={styles.wrapper}>
@@ -93,7 +93,7 @@ const Login = () => {
             )}
           />
           <button
-            className={styles.button}
+            className={cx('btn', styles.button)}
             onClick={handleSubmit(onSubmit)}
           >
             Sign in

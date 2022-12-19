@@ -11,7 +11,7 @@ type ModalProps = {
   closeClassName?: string;
   containerClassName?: string;
   visible: boolean;
-  onClose?: any;
+  onClose?: () => void;
   children: ReactNode;
 };
 

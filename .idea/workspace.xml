@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ea1ef38-7782-4cc4-82be-9a3d0c46e891" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Modal/Modal.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Modal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Success/Success.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Success/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Field/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Field/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FieldPassword/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/Modal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/Modal.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Success/Success.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Success/Success.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Success/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Success/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/helpers/mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/helpers/mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/Login/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/Login/Login.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/template/Login/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/Login/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,7 @@
       <workItem from="1671311929849" duration="15579000" />
       <workItem from="1671369351704" duration="6068000" />
       <workItem from="1671481115793" duration="1634000" />
-      <workItem from="1671483956953" duration="1410000" />
+      <workItem from="1671483956953" duration="4952000" />
     </task>
     <servers />
   </component>
